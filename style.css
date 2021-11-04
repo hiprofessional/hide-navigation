@@ -1,0 +1,114 @@
+* {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: #fbf7f3;
+  height: 100px;
+}
+
+header .logo {
+  width: 40px;
+  height: 40px;
+  background-color: #7140eb;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+  left: 30px;
+}
+
+nav {
+  background: #ffffff;
+  color: #101010;
+  top: 0px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 6px 12px 6px 12px;
+}
+
+nav ul li {
+  padding: 6px 24px;
+}
+
+nav ul li a {
+  color: #8d867c;
+}
+
+nav ul li a:hover {
+  color: #101010;
+}
+
+nav ul li + li {
+  margin-left: 48px;
+}
+
+.navigation__fixed nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.navigation__fixed main {
+  margin-top: 42px;
+}
+
+.navigation__fixed.navigation__hidden nav {
+  top: -42px;
+}
+
+.navigation__fixed.navigation__hidden main {
+  margin-top: 42px;
+}
+
+.big__rectangle {
+  background: white;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(0%, #00769e), to(#002a54));
+  background: linear-gradient(90deg, white 0%, #00769e 0%, #002a54 100%);
+  width: 100%;
+  height: 400px;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.big__rectangle h2 {
+  font-size: 62px;
+  margin-bottom: 20px;
+}
+
+.big__rectangle.rust {
+  background: white;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(0%, #b16016), to(#ff9c00));
+  background: linear-gradient(90deg, white 0%, #b16016 0%, #ff9c00 100%);
+}
+
+.big__rectangle.dark {
+  background: white;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(0%, #00043b), to(#006e2b));
+  background: linear-gradient(90deg, white 0%, #00043b 0%, #006e2b 100%);
+}
+/*# sourceMappingURL=style.css.map */
